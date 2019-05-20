@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "780292745143",
+    "firebase_url": "https://my-pediatric.firebaseio.com",
+    "project_id": "my-pediatric",
+    "storage_bucket": "my-pediatric.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780292745143:android:3f576b89041fd3b8",
+        "android_client_info": {
+          "package_name": "com.example.miprimerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780292745143-meg07maa6m0qgd3cfrp8l4389u18dvkn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miprimerapp",
+            "certificate_hash": "f5ec7b0e01f8951595f680f4cf7b50a0a15d6d26"
+          }
+        },
+        {
+          "client_id": "780292745143-ravuuvnjjlhd8tv45mkqc03jpcmss1a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpgY2jjE9A_wft51qDfeeEnGATv6c5M1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780292745143-ravuuvnjjlhd8tv45mkqc03jpcmss1a7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
