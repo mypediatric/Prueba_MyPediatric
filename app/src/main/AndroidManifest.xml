@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.miprimerapp">
+    package="com.example.mypediatric">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
@@ -9,12 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".PediatrasFound"></activity>
-        <activity android:name=".PediatrasSearch" />
-        <activity android:name=".Pediatras" />
-        <activity android:name=".Registro" />
-        <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.mypediatric.PediatrasFound"></activity>
+        <activity android:name="com.example.mypediatric.PediatrasSearch" />
+        <activity android:name="com.example.mypediatric.Pediatras" />
+        <activity android:name="com.example.mypediatric.Registro" />
+        <activity android:name="com.example.mypediatric.Login" />
+        <activity android:name="com.example.mypediatric.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

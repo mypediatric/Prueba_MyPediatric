@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "780292745143",
-    "firebase_url": "https://my-pediatric.firebaseio.com",
-    "project_id": "my-pediatric",
-    "storage_bucket": "my-pediatric.appspot.com"
+    "project_number": "990438958468",
+    "firebase_url": "https://mypediatricfireb.firebaseio.com",
+    "project_id": "mypediatricfireb",
+    "storage_bucket": "mypediatricfireb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:780292745143:android:3f576b89041fd3b8",
+        "mobilesdk_app_id": "1:990438958468:android:c2a5e97a5d0fe78e",
         "android_client_info": {
-          "package_name": "com.example.miprimerapp"
+          "package_name": "com.example.mypediatric"
         }
       },
       "oauth_client": [
         {
-          "client_id": "780292745143-meg07maa6m0qgd3cfrp8l4389u18dvkn.apps.googleusercontent.com",
+          "client_id": "990438958468-krofjfu3fs6au8jqetfnmbid5814hav4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.miprimerapp",
-            "certificate_hash": "f5ec7b0e01f8951595f680f4cf7b50a0a15d6d26"
+            "package_name": "com.example.mypediatric",
+            "certificate_hash": "c67d5adc43cd83b350a58bceede727c0e71612a9"
           }
         },
         {
-          "client_id": "780292745143-ravuuvnjjlhd8tv45mkqc03jpcmss1a7.apps.googleusercontent.com",
+          "client_id": "990438958468-p1rlp4o1bmc1pdg3mtf2jao11utak80m.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCpgY2jjE9A_wft51qDfeeEnGATv6c5M1Y"
+          "current_key": "AIzaSyC9fA9QdaTSf44dmXTnFjsOy8XidscY1Tk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "780292745143-ravuuvnjjlhd8tv45mkqc03jpcmss1a7.apps.googleusercontent.com",
+              "client_id": "990438958468-p1rlp4o1bmc1pdg3mtf2jao11utak80m.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

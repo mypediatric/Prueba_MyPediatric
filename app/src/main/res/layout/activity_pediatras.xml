@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pediatras"
-    android:background="@drawable/fondo2">
+    android:background="@drawable/fondo2"
+    tools:context=".Pediatras">
 
     <TextView
         android:id="@+id/labelPediatra"

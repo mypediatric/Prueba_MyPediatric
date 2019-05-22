@@ -1,8 +1,8 @@
-package com.example.miprimerapp;
+package com.example.mypediatric;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class PediatrasFound extends AppCompatActivity {
@@ -13,8 +13,8 @@ public class PediatrasFound extends AppCompatActivity {
         setContentView(R.layout.activity_pediatras_found);
     }
 
-    public void MainActivity(View view){
-        Intent mainactivity = new Intent(this,MainActivity.class);
+    public void MainActivity(View view) {
+        Intent mainactivity = new Intent(this, MainActivity.class);
         startActivity(mainactivity);
     }
 }

@@ -115,7 +115,7 @@
                 android:textSize="15sp" />
 
             <RadioGroup
-                android:id="@+id/radioGroup"
+                android:id="@+id/radgChromosome23"
                 android:layout_width="202dp"
                 android:layout_height="51dp"
                 android:layout_gravity="center"
@@ -193,7 +193,7 @@
                 android:layout_width="143dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/boton_redondo"
-                android:onClick="Ingresar"
+                android:onClick="Registrar"
                 android:text="@string/btnRegisterMe"
                 android:textColor="#FFFFFF" />
         </LinearLayout>

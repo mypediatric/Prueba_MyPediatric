@@ -1,7 +1,8 @@
-package com.example.miprimerapp;
+package com.example.mypediatric;
+
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -13,12 +14,12 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void MainActivity(View view){
-        Intent mainactivity = new Intent(this,MainActivity.class);
+    public void MainActivity(View view) {
+        Intent mainactivity = new Intent(this, MainActivity.class);
         startActivity(mainactivity);
     }
 
-    public void Proximo(View view){
+    public void Proximo(View view) {
         Toast.makeText(this, "Proximamente", Toast.LENGTH_SHORT).show();
     }
 
