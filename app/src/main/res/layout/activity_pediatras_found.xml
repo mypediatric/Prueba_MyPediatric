@@ -100,6 +100,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.965"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home" />
+        />
 
 </android.support.constraint.ConstraintLayout>
