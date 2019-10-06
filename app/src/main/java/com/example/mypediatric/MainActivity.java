@@ -1,6 +1,7 @@
 package com.example.mypediatric;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,8 +12,9 @@ import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
 public class MainActivity extends AppCompatActivity {
+
     CarouselView carouselView;
-    int image[] = {R.drawable.doctor, R.drawable.bebe, R.drawable.farmacia, R.drawable.centro, R.drawable.punto, R.drawable.ajustes};
+    int image[] = {R.drawable.centroleyenda, R.drawable.farmaciasleyenda, R.drawable.profesionalesleyenda, R.drawable.bebeleyenda};
     ImageListener imageListener = new ImageListener() {
         @Override
         public void setImageForPosition(int position, ImageView imageView) {
@@ -24,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         carouselView = (CarouselView) findViewById(R.id.carusiel);
 
@@ -52,5 +53,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Proximamente", Toast.LENGTH_SHORT).show();
     }
 
-
+    public void Link1 (View view){
+        Intent LinkIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://mypediatric.com.co"));
+        startActivity(LinkIntent);
+    }
 }

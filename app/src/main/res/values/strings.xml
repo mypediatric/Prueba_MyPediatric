@@ -29,5 +29,8 @@
     <string name="labelPediatras">Directorio Pediatras</string>
     <string name="txtConsultP">Seleccione el pediatra que desea consultar</string>
     <string name="txtSearchP">Buscar pediatra</string>
+    <string name="title_activity_pediatraslist">Pediatraslist</string>
+    <string name="string_todo" />
+    <string name="necesitas_ayuda_visita_nuestra_pagina_web">¿Necesitas ayuda? Visita nuestra pagina web:</string>
 
 </resources>

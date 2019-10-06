@@ -9,18 +9,19 @@
 
     <ImageView
         android:id="@+id/image2View"
-        android:layout_width="244dp"
-        android:layout_height="199dp"
+        android:layout_width="328dp"
+        android:layout_height="275dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntLog"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
     <Button
@@ -51,38 +52,49 @@
         app:layout_constraintEnd_toStartOf="@+id/btnRegister"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtvMove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:onClick="Proximo"
-        android:text="@string/txtvMove"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carusiel"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="322dp"
+        android:layout_height="240dp"
 
         android:layout_marginStart="8dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="388dp"
         android:layout_marginEnd="8dp"
         android:baselineAligned="false"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.085">
 
 
     </com.synnapps.carouselview.CarouselView>
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="Link1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/www"
+        android:contentDescription="@string/string_todo" />
+
+    <TextView
+        android:id="@+id/pagina"
+        android:layout_width="175dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/necesitas_ayuda_visita_nuestra_pagina_web"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

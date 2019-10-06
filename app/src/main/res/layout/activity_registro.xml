@@ -182,6 +182,20 @@
                 android:hint="@string/txtPassword"
                 android:inputType="textPassword" />
 
+            <EditText
+                android:id="@+id/txtPass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:hint="@string/txtPassword"
+                android:inputType="textPassword" />
+
             <CheckBox
                 android:id="@+id/chkTandc"
                 android:layout_width="274dp"
