@@ -7,49 +7,21 @@
     android:background="@drawable/fondo2"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/image2View"
         android:layout_width="235dp"
         android:layout_height="239dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#00000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntLog"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
-
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="110dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/boton_redondo"
-        android:onClick="Registro"
-        android:text="@string/btnRegister"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bntLog"
-        android:layout_width="115dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/boton_redondo"
-        android:onClick="Ingresar"
-        android:text="@string/btnLog"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/btnRegister"
-        app:layout_constraintTop_toTopOf="parent" />
-
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carusiel"
@@ -57,14 +29,13 @@
         android:layout_height="240dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="12dp"
         android:baselineAligned="false"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/pagina"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image2View"
-        app:layout_constraintVertical_bias="0.094">
+        app:layout_constraintVertical_bias="0.494">
 
 
     </com.synnapps.carouselview.CarouselView>
