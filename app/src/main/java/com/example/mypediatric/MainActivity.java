@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(registro);
     }
 
-    public void Pediatras(View view) {
+    /*public void Pediatras(View view) {
         Intent pediatras = new Intent(this, Pediatras.class);
         startActivity(pediatras);
-    }
+    }*/
 
     public void Proximo(View view) {
         Toast.makeText(this, "Proximamente", Toast.LENGTH_SHORT).show();
