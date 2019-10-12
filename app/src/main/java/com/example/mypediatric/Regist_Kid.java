@@ -3,16 +3,13 @@ package com.example.mypediatric;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.database.FirebaseDatabase;
-
 public class Regist_Kid extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-
+/*
         txtAdress = findViewById(R.id.txtAdress);
         txtBirth = findViewById(R.id.txtBirth);
         txtDocNum = findViewById(R.id.txtDocNum);
@@ -31,6 +28,6 @@ public class Regist_Kid extends AppCompatActivity {
             FirebaseApp.initializeApp(this);
             FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference = firebaseDatabase.getReference();
-        }
+        }*/
     }
 }

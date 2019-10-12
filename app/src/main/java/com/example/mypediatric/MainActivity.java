@@ -57,4 +57,9 @@ public class MainActivity extends AppCompatActivity {
         Intent LinkIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://mypediatric.com.co"));
         startActivity(LinkIntent);
     }
+
+    public void OcultPediatr(View view) {
+        Intent OcultPediatr = new Intent(this, pediatras_create.class);
+        startActivity(OcultPediatr);
+    }
 }
