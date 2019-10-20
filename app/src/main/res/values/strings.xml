@@ -47,4 +47,14 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 
+    // Registro kids
+    <string name="txtNombreK">Nombres</string>
+    <string name="txtApellidK">Apellidos</string>
+    <string name="txtGeneroK">Genero:</string>
+    <string name="txtEdadK">Edad</string>
+    <string name="txtPesoK">Peso</string>
+    <string name="txtRHK">RH</string>
+    <string name="txtEstaturaK">Estatura</string>
+
+
 </resources>
