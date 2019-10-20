@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo2"
+    android:background="@drawable/vector_logo"
     tools:context=".Pediatras">
 
     <TextView
@@ -93,4 +93,5 @@
         app:layout_constraintStart_toStartOf="@+id/btnimgSearchP"
         app:layout_constraintTop_toTopOf="@+id/btnimgSearchP"
         app:layout_constraintVertical_bias="0.918" />
+
 </android.support.constraint.ConstraintLayout>
