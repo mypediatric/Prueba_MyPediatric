@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "990438958468-p1bb2vpfagqt2be0iaarmhrjptfag6om.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mypediatric",
+            "certificate_hash": "75ec5691dc66556b812fc6ae32a64c08541eb51e"
+          }
+        },
+        {
           "client_id": "990438958468-krofjfu3fs6au8jqetfnmbid5814hav4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

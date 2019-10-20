@@ -10,162 +10,211 @@
 
     <TextView
         android:id="@+id/txtTitle"
-        android:layout_width="419dp"
-        android:layout_height="67dp"
+        android:layout_width="411dp"
+        android:layout_height="68dp"
         android:background="@drawable/boton_fijo"
         android:gravity="center"
-        android:text="Información del niño o niña"
+        android:text="Registro del niño/niña"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="413dp"
-        android:layout_height="582dp"
-        android:layout_marginTop="12dp"
-        android:scrollbarStyle="insideInset"
+    <TextView
+        android:id="@+id/txtApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle">
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.265" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombres"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <TextView
+        android:id="@+id/txtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+        android:id="@+id/txtRH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RH"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/txtEstatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estatura"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <TextView
+        android:id="@+id/txtGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genero"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <Spinner
+        android:id="@+id/spinGen"
+        android:layout_width="253dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <Spinner
+        android:id="@+id/spinRH"
+        android:layout_width="253dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <Spinner
+        android:id="@+id/spinEdad"
+        android:layout_width="253dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <EditText
+        android:id="@+id/txtNombreK"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <EditText
+        android:id="@+id/txtEstaturaK"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <EditText
+        android:id="@+id/txtApellidK"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <EditText
+        android:id="@+id/txtPesoK"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <Button
+        android:id="@+id/btnRegistarK"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondo"
+        android:onClick="Registrar"
+        android:text="Registrar"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="473dp"
+        tools:ignore="MissingConstraints" />
+
+</>
 
 
 
-            <EditText
-                android:id="@+id/txtName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:ems="10"
-                android:hint="@string/txtNameF"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/txtLastName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:ems="10"
-                android:hint="@string/txtNameL"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/txtBirth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:ems="10"
-                android:hint="@string/txtBirthDate"
-                android:inputType="date" />
-
-            <TextView
-                android:id="@+id/txtChromosome23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:text="@string/txtChromosome23"
-                android:textSize="15sp" />
-
-            <RadioGroup
-                android:id="@+id/radgChromosome23"
-                android:layout_width="202dp"
-                android:layout_height="51dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp">
-
-                <RadioButton
-                    android:id="@+id/niño"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/rbMale" />
-
-                <RadioButton
-                    android:id="@+id/niña"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/rbFemale" />
-            </RadioGroup>
-
-            <EditText
-                android:id="@+id/txtPeso"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:ems="10"
-                android:hint="Peso"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/txtEstatura"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:ems="10"
-                android:hint="Estatura"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/txtEdad"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:ems="10"
-                android:hint="Edad"
-                android:inputType="textPersonName" />
-            <Button
-                android:id="@+id/btnRegistar"
-                android:layout_width="143dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/boton_redondo"
-                android:onClick="Registrar"
-                android:text="Registrar"
-                android:textColor="#FFFFFF" />
-        </LinearLayout>
-    </ScrollView>
-
-
-
-</android.support.constraint.ConstraintLayout>
