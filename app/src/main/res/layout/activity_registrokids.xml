@@ -214,7 +214,7 @@
         tools:layout_editor_absoluteY="473dp"
         tools:ignore="MissingConstraints" />
 
-</>
+</android.support.constraint.ConstraintLayout>
 
 
 

@@ -49,17 +49,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(pediatras);
     }*/
 
-    public void Proximo(View view) {
-        Toast.makeText(this, "Proximamente", Toast.LENGTH_SHORT).show();
-    }
 
     public void Link1 (View view){
         Intent LinkIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://mypediatric.com.co"));
         startActivity(LinkIntent);
     }
 
-    public void OcultPediatr(View view) {
+    /*public void OcultPediatr(View view) {
         Intent OcultPediatr = new Intent(this, pediatras_create.class);
         startActivity(OcultPediatr);
-    }
+    }*/
 }
