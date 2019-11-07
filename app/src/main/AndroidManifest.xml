@@ -23,6 +23,7 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".Registro"></activity>
         <activity android:name=".Login"></activity>
+        <activity android:name=".pediatras_create"></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

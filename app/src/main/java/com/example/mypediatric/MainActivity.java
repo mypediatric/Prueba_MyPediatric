@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(LinkIntent);
     }
 
-    /*public void OcultPediatr(View view) {
+    public void OcultPediatr(View view) {
         Intent OcultPediatr = new Intent(this, pediatras_create.class);
         startActivity(OcultPediatr);
-    }*/
+    }
 }
