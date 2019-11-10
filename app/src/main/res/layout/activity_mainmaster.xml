@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo4"
+    android:background="@drawable/vector_logo"
     >
 
 
@@ -17,14 +17,14 @@
         app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/profesionalesicono"
-        tools:layout_editor_absoluteY="284dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="295dp" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="201dp"
         android:layout_height="131dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="232dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -35,7 +35,7 @@
         android:id="@+id/imageView8"
         android:layout_width="201dp"
         android:layout_height="131dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,7 +46,7 @@
         android:id="@+id/imageView9"
         android:layout_width="201dp"
         android:layout_height="131dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="164dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,9 +57,9 @@
         android:id="@+id/imageView13"
         android:layout_width="201dp"
         android:layout_height="131dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginLeft="196dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="100dp"
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,9 +69,9 @@
         android:id="@+id/imageView12"
         android:layout_width="201dp"
         android:layout_height="131dp"
-        android:layout_marginStart="196dp"
-        android:layout_marginLeft="196dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="364dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/farmaciasicono" />

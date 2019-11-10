@@ -17,10 +17,10 @@
     <string name="txtNumDocument">Numero de documento</string>
     <string name="txtNameF">Nombres</string>
     <string name="txtNameL">Apellidos</string>
-    <string name="txtChromosome23">Genero:</string>
+    <string name="txtChromosome23">GENERO:</string>
     <string name="rbMale">Masculino</string>
     <string name="rbFemale">Femenino</string>
-    <string name="txtBirthDate">Fecha de nacimiento</string>
+
     <string name="txtAdress">Dirección</string>
     <string name="txtemail">Correo elecronico</string>
     <string name="chkTandc">Acepto términos y condiciones</string>
@@ -46,5 +46,9 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+    <string name="txtBirthDate">Ingrese su fecha nacimiento</string>
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="formato_hora">hh:mm</string>
 
 </resources>
