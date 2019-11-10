@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/vector_logo"
+    android:background="@drawable/fondo3"
     tools:context=".Registro"
     tools:layout_editor_absoluteY="25dp">
+
 
     <TextView
         android:id="@+id/txtTitle"
@@ -42,10 +43,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitle"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintTop_toTopOf="@+id/txtTitle"
+        app:layout_constraintVertical_bias="0.194" />
 
     <TextView
         android:id="@+id/txtEdad"
@@ -215,6 +216,3 @@
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
-
-
-

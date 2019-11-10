@@ -3,6 +3,7 @@ package com.example.mypediatric;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -25,6 +26,19 @@ private DatabaseReference RegistKid;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        //spinner genero
+        spinGen= findViewById(R.id.spinGen);
+        ArrayAdapter<CharSequence> adapterG=ArrayAdapter.createFromResource(this,R.array.spinGen,android.R.layout.simple_spinner_item);
+        spinGen.setAdapter(adapterG);
+        //spinner RH
+        spinGen= findViewById(R.id.spinRH);
+        ArrayAdapter<CharSequence> adapterH=ArrayAdapter.createFromResource(this,R.array.spinRH,android.R.layout.simple_spinner_item);
+        spinGen.setAdapter(adapterH);
+        //spinner Edad
+        spinGen= findViewById(R.id.spinEdad);
+        ArrayAdapter<CharSequence> adapterE=ArrayAdapter.createFromResource(this,R.array.spinEdad,android.R.layout.simple_spinner_item);
+        spinGen.setAdapter(adapterE);
+
         RegistKid = FirebaseDatabase.getInstance().getReference("Clases_Reg_Kids");
         txtNombreK=(EditText) findViewById(R.id.txtNombreK);
         txtApellidK=(EditText) findViewById(R.id.txtApellidK);
