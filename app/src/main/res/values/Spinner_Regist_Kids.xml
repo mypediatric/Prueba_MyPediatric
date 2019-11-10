@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<resources>
+    <string-array name="spinGen">
+        <item> Masculino </item>
+        <item> Femenino </item>
+        <item> Otro </item>
+    </string-array>
+    <string-array name="spinEdad">
+        <item> 1-6 meses </item>
+        <item> 7-12 meses </item>
+        <item> 1 </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6 </item>
+        <item> 7 </item>
+        <item> 8 </item>
+        <item> 9 </item>
+        <item> 10 </item>
+        <item> 11 </item>
+        <item> 12 </item>
+        <item> 13 </item>
+        <item> 14 </item>
+        <item> 15 </item>
+    </string-array>
+    <string-array name="spinRH">
+        <item> A+ </item>
+        <item> A- </item>
+        <item> O+ </item>
+        <item> O- </item>
+        <item> B+ </item>
+        <item> B- </item>
+        <item> AB+ </item>
+        <item> AB- </item>
+    </string-array>
 
-
-
-<resources></resources>
+</resources>

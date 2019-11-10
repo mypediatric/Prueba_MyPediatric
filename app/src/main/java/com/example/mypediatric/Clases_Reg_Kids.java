@@ -1,5 +1,8 @@
 package com.example.mypediatric;
 
+import android.os.Bundle;
+import android.widget.Spinner;
+
 public class Clases_Reg_Kids {
 
     public static Object child;
