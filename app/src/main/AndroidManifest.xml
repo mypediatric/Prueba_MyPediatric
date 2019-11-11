@@ -12,7 +12,9 @@
         <activity
             android:name=".Mainmaster"
             android:label="@string/title_activity_mainmaster"
+
             android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".Registro"></activity>
         <activity android:name=".splash_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +23,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Registro"></activity>
         <activity android:name=".Login"></activity>
         <activity android:name=".pediatras_create"></activity>
         <activity android:name=".Regist_Kid"></activity>

@@ -23,7 +23,7 @@ public class Login extends AppCompatActivity {
         Toast.makeText(this, "Proximamente", Toast.LENGTH_SHORT).show();
     }
 
-    public void Registro(View view) {
+    public void Registrar(View view) {
         Intent registro = new Intent(this, Registro.class);
         startActivity(registro);
     }

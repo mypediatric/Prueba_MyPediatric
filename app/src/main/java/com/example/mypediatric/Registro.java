@@ -68,7 +68,7 @@ public class Registro extends AppCompatActivity {
         } else {
             if (radgChromosome23.getCheckedRadioButtonId() == 0){
                 Genere= "Masculino";
-            } else if (radgChromosome23.getCheckedRadioButtonId() == 1){
+            } else if (radgChromosome23.getCheckedRadioButtonId() == 0){
                 Genere= "Femenino";
             }
             Paciente p = new Paciente();

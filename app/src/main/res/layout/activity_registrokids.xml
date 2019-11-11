@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo3"
-    tools:context=".Regist_Kid"
-    tools:layout_editor_absoluteY="25dp">
+    android:background="@drawable/fondo2"
+    tools:context=".Regist_Kid">
 
 
     <TextView
         android:id="@+id/txtTitle"
-        android:layout_width="398dp"
-        android:layout_height="39dp"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/boton_fijo"
         android:gravity="center"
         android:text="@string/registro_kids"
@@ -25,15 +25,15 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="416dp"
+        android:layout_height="617dp"
         android:scrollbarStyle="outsideOverlay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitle"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.467">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 android:text="@string/ingrese_nombres_kids"
-                android:textSize="10sp"/>
+                android:textSize="10sp" />
 
             <EditText
                 android:id="@+id/txtApellidK"
@@ -100,7 +100,8 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:ems="10"
-                />
+                android:visibility="visible"
+                tools:visibility="visible" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -119,8 +120,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:ems="10"
-                />
+                android:ems="10" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -128,6 +128,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/selec_edad_kids"
                 android:textSize="10sp" />
+
             <Spinner
                 android:id="@+id/spinRH"
                 android:layout_width="324dp"
@@ -138,8 +139,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:ems="10"
-                />
+                android:ems="10" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -182,6 +182,7 @@
                 android:ems="10"
                 android:hint="@string/estatura_kids"
                 android:inputType="date" />
+
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="340dp"
@@ -205,10 +206,13 @@
         android:id="@+id/imageView"
         android:layout_width="70dp"
         android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/encaje" />
 
 </android.support.constraint.ConstraintLayout>

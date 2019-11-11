@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo3"
-    tools:context=".Registro"
-    tools:layout_editor_absoluteY="25dp">
+    android:background="@drawable/fondo2"
+    tools:context=".Registro">
 
     <TextView
         android:id="@+id/txtTitle"
