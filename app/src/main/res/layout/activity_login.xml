@@ -124,18 +124,34 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/txtvreg"
+    android:id="@+id/txtvreg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:onClick="Registro"
+    android:shape="line"
+    android:text="@string/labelRegisterTitle"
+    android:textSize="18dp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/txtvreg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textSize="18dp"
-        android:onClick="Registro"
-        android:text="@string/labelRegisterTitle"
-        android:textStyle="bold"
+        android:onClick="Registrokid"
         android:shape="line"
+        android:text="@string/labelRegisterTitle"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 
     <TextView
         android:id="@+id/textView4"

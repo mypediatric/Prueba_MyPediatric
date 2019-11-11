@@ -51,4 +51,22 @@
     <string name="formato_fecha">dd/mm/yyyy</string>
     <string name="formato_hora">hh:mm</string>
 
+//
+    <string name="registro_kids">Registro niño/niña</string>
+    <string name="nombres_kids">Nombres</string>
+    <string name="ingrese_nombres_kids">Ingrese los nombres</string>
+    <string name="apellidos_kids">Apellidos</string>
+    <string name="ingrese_apellidos_kids">Ingrese los apellidos</string>
+    <string name="selec_genero_kids">Seleccione el genero</string>
+    <string name="selec_edad_kids">Seleccione la edad</string>
+    <string name="selec_rh_kids">Seleccione el RH</string>
+    <string name="peso_kids">Peso</string>
+    <string name="ingrese_peso_kids">Ingrese el peso</string>
+    <string name="estatura_kids">Estatura</string>
+    <string name="ingrese_estatura_kids">Ingrese la estatura</string>
+    <string name="btnregistrarkid">Registrar</string>
+
+
+
+
 </resources>

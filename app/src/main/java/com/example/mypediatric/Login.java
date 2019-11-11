@@ -28,4 +28,8 @@ public class Login extends AppCompatActivity {
         startActivity(registro);
     }
 
-}
+    public void Registrokid(View view) {
+        Intent registro = new Intent(this, Regist_Kid.class);
+        startActivity(registro);
+    }
+    }
