@@ -25,7 +25,7 @@ private DatabaseReference RegistKid;
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro);
+        setContentView(R.layout.activity_registrokids);
         //spinner genero
         spinGen= findViewById(R.id.spinGen);
         ArrayAdapter<CharSequence> adapterG=ArrayAdapter.createFromResource(this,R.array.spinGen,android.R.layout.simple_spinner_item);
@@ -38,7 +38,6 @@ private DatabaseReference RegistKid;
         spinGen= findViewById(R.id.spinEdad);
         ArrayAdapter<CharSequence> adapterE=ArrayAdapter.createFromResource(this,R.array.spinEdad,android.R.layout.simple_spinner_item);
         spinGen.setAdapter(adapterE);
-
         RegistKid = FirebaseDatabase.getInstance().getReference("Clases_Reg_Kids");
         txtNombreK=(EditText) findViewById(R.id.txtNombreK);
         txtApellidK=(EditText) findViewById(R.id.txtApellidK);
