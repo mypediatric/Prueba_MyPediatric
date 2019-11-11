@@ -28,6 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="Editar"
                 android:text="editar" />
 
             <Button
@@ -74,7 +75,7 @@
         android:layout_height="wrap_content">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/txtTelefono"
+            android:id="@+id/txtFPTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="telefono" />
@@ -98,7 +99,7 @@
         android:layout_height="wrap_content">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/txtDescripcion"
+            android:id="@+id/txtFPDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="descripcion" />

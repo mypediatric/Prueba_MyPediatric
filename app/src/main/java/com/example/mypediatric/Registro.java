@@ -22,7 +22,7 @@ public class Registro extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
-    EditText txtDocType, txtDocNum, txtName, txtLastName, txtBirth, txtAdress, txtEmail, txtPass;
+    EditText txtDocType, txtDocNum, txtName, txtLastName, txtBirth, txtAdress, txtEmail, txtPass, txtPass2;
     RadioGroup radgChromosome23;
     RadioButton rbMale, rbFemale;
     CheckBox chkTandc;
@@ -38,8 +38,9 @@ public class Registro extends AppCompatActivity {
         txtDocType = findViewById(R.id.txtDocType);
         txtEmail = findViewById(R.id.txtEmail);
         txtLastName = findViewById(R.id.txtLastName);
-        txtName = findViewById(R.id.txtName);
+        txtName = findViewById(R.id.txtFPName);
         txtPass = findViewById(R.id.txtPass);
+        txtPass2 = findViewById(R.id.txtPass2);
         radgChromosome23 = findViewById(R.id.radgChromosome23);
         rbMale = findViewById(R.id.rbMale);
         rbFemale = findViewById(R.id.rbFemale);
@@ -63,7 +64,8 @@ public class Registro extends AppCompatActivity {
         String Adress = txtAdress.getText().toString();
         String Email = txtEmail.getText().toString();
         String Pass = txtPass.getText().toString();
-        if (DocT.equals("") || DocN.equals("") || Name.equals("") || LastN.equals("") || Birth.equals("") || radgChromosome23.getCheckedRadioButtonId() == -1 || Adress.equals("") || Email.equals("") || Pass.equals("")) {
+        String Pass2 = txtPass2.getText().toString();
+        if (DocT.equals("") || DocN.equals("") || Name.equals("") || LastN.equals("") || Birth.equals("") || radgChromosome23.getCheckedRadioButtonId() == -1 || Adress.equals("") || Email.equals("") || Pass.equals("")||Pass2.equals("")||!Pass2.equals(Pass)) {
             Validate();
         } else {
             if (radgChromosome23.getCheckedRadioButtonId() == 0){
@@ -100,24 +102,29 @@ public class Registro extends AppCompatActivity {
         String Adress = txtAdress.getText().toString();
         String Email = txtEmail.getText().toString();
         String Pass = txtPass.getText().toString();
+        String Pass2 = txtPass2.getText().toString();
         if (DocT.equals("")) {
-            txtDocType.setError("Required");
+            txtDocType.setError("Requerido");
         } else if (DocN.equals("")) {
-            txtDocNum.setError("Required");
+            txtDocNum.setError("Requerido");
         } else if (Name.equals("")) {
-            txtName.setError("Required");
+            txtName.setError("Requerido");
         } else if (LastN.equals("")) {
-            txtLastName.setError("Required");
+            txtLastName.setError("Requerido");
         } else if (Birth.equals("")) {
-            txtBirth.setError("Required");
+            txtBirth.setError("Requerido");
         } else if (radgChromosome23.getCheckedRadioButtonId() == -1) {
-            rbFemale.setError("Required");
+            rbFemale.setError("Requerido");
         } else if (Adress.equals("")) {
-            txtAdress.setError("Required");
+            txtAdress.setError("Requerido");
         } else if (Email.equals("")) {
-            txtEmail.setError("Required");
+            txtEmail.setError("Requerido");
         } else if (Pass.equals("")) {
-            txtPass.setError("Required");
+            txtPass.setError("Requerido");
+        } else if (Pass2.equals("")) {
+            txtPass2.setError("Requerido");
+        } else if (!Pass2.equals(Pass)) {
+            txtPass2.setError("No coincide");
         }
     }
 

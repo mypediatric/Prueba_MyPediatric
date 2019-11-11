@@ -26,6 +26,8 @@
         <activity android:name=".Login"></activity>
         <activity android:name=".pediatras_create"></activity>
         <activity android:name=".Regist_Kid"></activity>
+        <activity android:name=".Pediatras"></activity>
+        <activity android:name=".PediatrasFound"></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

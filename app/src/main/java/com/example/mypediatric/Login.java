@@ -32,4 +32,9 @@ public class Login extends AppCompatActivity {
         Intent registro = new Intent(this, Regist_Kid.class);
         startActivity(registro);
     }
+
+    public void MainMaster(View view) {
+        Intent Mainmaster = new Intent(this, Mainmaster.class);
+        startActivity(Mainmaster);
     }
+}

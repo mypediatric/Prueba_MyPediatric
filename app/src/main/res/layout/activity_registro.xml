@@ -88,7 +88,7 @@
                 android:textSize="10sp" />
 
             <EditText
-                android:id="@+id/txtName"
+                android:id="@+id/txtFPName"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

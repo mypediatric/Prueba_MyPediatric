@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -31,6 +32,7 @@ public class pediatras_create extends AppCompatActivity {
     TextInputEditText Nombre, Apellido, Telefono, Ubicacion, Descripcion;
     Button crear, actualizar, eliminar, hogar;
     ListView ListVPersonas;
+    Pediatra pediatraSelected;
 
 
     @Override
@@ -40,9 +42,9 @@ public class pediatras_create extends AppCompatActivity {
 
         Nombre = findViewById(R.id.txtNombre);
         Apellido = findViewById(R.id.txtApellido);
-        Telefono = findViewById(R.id.txtTelefono);
+        Telefono = findViewById(R.id.txtFPTelefono);
         Ubicacion = findViewById(R.id.txtUbicacion);
-        Descripcion = findViewById(R.id.txtDescripcion);
+        Descripcion = findViewById(R.id.txtFPDescripcion);
 
         crear = findViewById(R.id.btnCreate);
         actualizar = findViewById(R.id.btnUpdate);
@@ -52,6 +54,18 @@ public class pediatras_create extends AppCompatActivity {
         ListVPersonas = findViewById(R.id.ListPediatras);
         InitializeFirebase();
         listarDatos();
+
+        ListVPersonas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                pediatraSelected=(Pediatra) parent.getItemAtPosition(position);
+                Nombre.setText(pediatraSelected.getNombre());
+                Apellido.setText(pediatraSelected.getApellido());
+                Telefono.setText(pediatraSelected.getTelefono());
+                Ubicacion.setText(pediatraSelected.getUbicacion());
+                Descripcion.setText(pediatraSelected.getDescripcion());
+            }
+        });
     }
 
     private void listarDatos() {
@@ -89,7 +103,26 @@ public class pediatras_create extends AppCompatActivity {
     private void Eliminar() {
     }
 
-    private void Editar() {
+    public void Editar(View view) {
+        Pediatra p = new Pediatra();
+        p.setUid(pediatraSelected.getUid());
+        String Nombrev = Nombre.getText().toString();
+        String Apellidov = Apellido.getText().toString();
+        String Telefonov = Telefono.getText().toString();
+        String Ubicacionv = Ubicacion.getText().toString();
+        String Descripcionv = Descripcion.getText().toString();
+        if (Nombrev.equals("")||Apellidov.equals("")||Telefonov.equals("")||Ubicacionv.equals("")||Descripcionv.equals("")) {
+            Validate();
+        } else {
+            p.setNombre(Nombrev);
+            p.setApellido(Apellidov);
+            p.setTelefono(Telefonov);
+            p.setUbicacion(Ubicacionv);
+            p.setDescripcion(Descripcionv);
+            databaseReference.child("Pediatra").child(p.getUid()).setValue(p);
+            Toast.makeText(this, "actualizado", Toast.LENGTH_SHORT).show();
+            Clear();
+        }
     }
 
     public void Registrar(View view) {
