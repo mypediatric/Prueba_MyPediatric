@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string-array name="spinGen">
+    <string-array name="spinGenK">
         <item>" "</item>
         <item> Masculino </item>
         <item> Femenino </item>
         <item> Otro </item>
     </string-array>
-    <string-array name="spinEdad">
+    <string-array name="spinEdadK">
         <item>" "</item>
         <item> 1-6 meses </item>
         <item> 7-12 meses </item>
@@ -27,7 +27,7 @@
         <item> 14 años</item>
         <item> 15 años</item>
     </string-array>
-    <string-array name="spinRH">
+    <string-array name="spinRHK">
         <item>" "</item>
         <item> A+ </item>
         <item> A- </item>

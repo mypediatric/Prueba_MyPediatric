@@ -70,4 +70,7 @@ public class Mainmaster extends AppCompatActivity {
     public void Proximo(View view) {
         Toast.makeText(this, "Proximamente", Toast.LENGTH_SHORT).show();
     }
+
+    public static class Clases_Reg_Kids {
+    }
 }

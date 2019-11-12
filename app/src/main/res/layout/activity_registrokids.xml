@@ -90,7 +90,7 @@
                 android:textSize="10sp" />
 
             <Spinner
-                android:id="@+id/spinGen"
+                android:id="@+id/spinGenK"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -112,7 +112,7 @@
                 android:textSize="10sp" />
 
             <Spinner
-                android:id="@+id/spinEdad"
+                android:id="@+id/spinEdadK"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -131,7 +131,7 @@
                 android:textSize="10sp" />
 
             <Spinner
-                android:id="@+id/spinRH"
+                android:id="@+id/spinRHK"
                 android:layout_width="324dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
