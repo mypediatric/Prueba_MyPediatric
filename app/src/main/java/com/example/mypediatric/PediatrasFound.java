@@ -20,12 +20,12 @@ public class PediatrasFound extends AppCompatActivity {
 
         Name=findViewById(R.id.txtFPName);
         Address=findViewById(R.id.txtFPDireccion);
-        Phone=findViewById(R.id.txtPCTelefono);
-        description=findViewById(R.id.txtPCDescripcion);
+        Phone=findViewById(R.id.txtFPTelefono);
+        description=findViewById(R.id.txtFPDescripcion);
 
         Name.setText(found.getNombre()+" "+found.getApellido());
-        Address.setText("Direccion: "+found.getUbicacion());
-        Phone.setText("Tel: "+found.getTelefono());
+        Address.setText(found.getUbicacion());
+        Phone.setText(found.getTelefono());
         description.setText(found.getDescripcion());
     }
 
