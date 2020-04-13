@@ -8,12 +8,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
 
 public class MainActivity extends AppCompatActivity {
 
     CarouselView carouselView;
+    FirebaseAuth fAuth;
+
+
     int image[] = {R.drawable.centroleyenda, R.drawable.farmaciasleyenda, R.drawable.profesionalesleyenda, R.drawable.bebeleyenda};
     ImageListener imageListener = new ImageListener() {
         @Override
@@ -32,6 +37,25 @@ public class MainActivity extends AppCompatActivity {
         carouselView.setPageCount(image.length);
         carouselView.setImageListener(imageListener);
 
+        carouselView.setImageClickListener(new ImageClickListener() {
+            @Override
+            public void onClick(int position) {
+                if (position==0){
+                    STPediatras();
+                    Toast.makeText(MainActivity.this, "Clicked item: "+ position, Toast.LENGTH_SHORT).show();
+                    }/*
+                } else if (position==1){
+                    Toast.makeText(MainActivity.this, "Clicked item: "+ position, Toast.LENGTH_SHORT).show();
+                }*/
+            }
+        });
+
+        fAuth = FirebaseAuth.getInstance();
+        if (fAuth.getCurrentUser() == null){
+            startActivity(new Intent(getApplicationContext(),Login.class));
+            finish();
+        }
+
     }
 
     public void Ingresar(View view) {
@@ -44,19 +68,24 @@ public class MainActivity extends AppCompatActivity {
         startActivity(registro);
     }
 
-    /*public void Pediatras(View view) {
+    public void pediatras_create(View view) {
+        Intent pediatras_create = new Intent(this, pediatras_create.class);
+        startActivity(pediatras_create);
+    }
+
+    public void Pediatras(View view) {
         Intent pediatras = new Intent(this, Pediatras.class);
         startActivity(pediatras);
-    }*/
+    }
+
+    public void STPediatras() {
+        Intent pediatras = new Intent(this, Pediatras.class);
+        startActivity(pediatras);
+    }
 
 
     public void Link1 (View view){
         Intent LinkIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("http://mypediatric.com.co"));
         startActivity(LinkIntent);
-    }
-
-    public void OcultPediatr(View view) {
-        Intent OcultPediatr = new Intent(this, pediatras_create.class);
-        startActivity(OcultPediatr);
     }
 }

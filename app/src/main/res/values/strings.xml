@@ -25,6 +25,7 @@
     <string name="txtemail">Correo elecronico</string>
     <string name="chkTandc">Acepto términos y condiciones</string>
     <string name="btnRegisterMe">Registrarme</string>
+    <string name="btnRegisterKid">Registrar</string>
 
     <string name="labelPediatras">Directorio Pediatras</string>
     <string name="txtConsultP">Seleccione el pediatra que desea consultar</string>

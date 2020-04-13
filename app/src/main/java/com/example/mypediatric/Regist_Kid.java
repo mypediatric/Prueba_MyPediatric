@@ -33,15 +33,15 @@ public class Regist_Kid extends AppCompatActivity {
 
 
         //spinner genero
-        spinGenK = findViewById(R.id.spinGenK);
+       // spinGenK = findViewById(R.id.spinGenK);
         ArrayAdapter<CharSequence> adapterG = ArrayAdapter.createFromResource(this, R.array.spinGenK, android.R.layout.simple_spinner_item);
         spinGenK.setAdapter(adapterG);
         //spinner RH
-        spinGenK = findViewById(R.id.spinRHK);
+       // spinGenK = findViewById(R.id.spinRHK);
         ArrayAdapter<CharSequence> adapterH = ArrayAdapter.createFromResource(this, R.array.spinRHK, android.R.layout.simple_spinner_item);
         spinGenK.setAdapter(adapterH);
         //spinner Edad
-        spinGenK = findViewById(R.id.spinEdadK);
+        //spinGenK = findViewById(R.id.spinEdadK);
         ArrayAdapter<CharSequence> adapterE = ArrayAdapter.createFromResource(this, R.array.spinEdadK, android.R.layout.simple_spinner_item);
         spinGenK.setAdapter(adapterE);
 
@@ -49,9 +49,9 @@ public class Regist_Kid extends AppCompatActivity {
         txtApellidK = (EditText) findViewById(R.id.txtApellidK);
         txtPesoK = (EditText) findViewById(R.id.txtPesoK);
         txtEstaturaK = (EditText) findViewById(R.id.txtEstaturaK);
-        spinGenK = (Spinner) findViewById(R.id.spinGenK);
-        spinEdadK = (Spinner) findViewById(R.id.spinEdadK);
-        spinRHK = (Spinner) findViewById(R.id.spinRHK);
+        //spinGenK = (Spinner) findViewById(R.id.spinGenK);
+        //pinEdadK = (Spinner) findViewById(R.id.spinEdadK);
+        // = (Spinner) findViewById(R.id.spinRHK);
         btnRegistarK = (Button) findViewById(R.id.btnRegistarK);
 
         InitializeFirebase();
