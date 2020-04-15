@@ -66,8 +66,18 @@
     <string name="estatura_kids">Estatura</string>
     <string name="ingrese_estatura_kids">Ingrese la estatura</string>
     <string name="btnregistrarkid">Registrar</string>
-
-
+    <string name="motivo_de_consulta">Motivo de Consulta</string>
+    <string name="enviar">Enviar</string>
+    <string name="actualmente_toma_algun_medicamento">Actualmente toma algun medicamento?</string>
+    <string name="cuales_son_sus_sintomas">Cuales son sus Sintomas?</string>
+    <string name="alergia_a_medicamento">Alergia a Medicamento?</string>
+    <string name="se_le_ah_realizado_alguna_cirujia">Se le ah realizado alguna cirujia?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="no">No</string>
+    <string name="no">No</string>
+    <string name="si">Si</string>
+    <string name="si">Si</string>
 
 
 </resources>
