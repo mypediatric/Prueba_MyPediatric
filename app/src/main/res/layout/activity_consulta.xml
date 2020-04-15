@@ -1,15 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_fondo2"
+    android:visibility="visible">
 
+    <TextView
+        android:id="@+id/moti_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:text="Motivo de Consulta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/sistomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Cuales son sus Sintomas?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_consulta" />
 
+    <TextView
+        android:id="@+id/alergia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginRight="259dp"
+        android:gravity="center"
+        android:text="Alergia a Medicamento?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_consulta"
+        />
 
+    <TextView
+        android:id="@+id/alg_medicam"
+        android:layout_width="263dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginRight="259dp"
+        android:gravity="left"
+        android:text="Actualmente toma algun medicamento?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_alergia" />
 
+    <TextView
+        android:id="@+id/alg_medicam2"
+        android:layout_width="263dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginRight="259dp"
+        android:gravity="left"
+        android:text="Se le ah realizado alguna cirujia?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_medicamento" />
 
+    <Spinner
+        android:id="@+id/spinner_consulta"
+        android:layout_width="216dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moti_consulta" />
 
+    <Spinner
+        android:id="@+id/spinner_Sintomas"
+        android:layout_width="216dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sistomas" />
 
+    <Spinner
+        android:id="@+id/spinner_alergia"
+        android:layout_width="216dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alergia" />
 
+    <Spinner
+        android:id="@+id/spinner_medicamento"
+        android:layout_width="216dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alg_medicam" />
+
+    <Spinner
+        android:id="@+id/spinner_cirujia"
+        android:layout_width="216dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alg_medicam2" />
+
+    <Switch
+        android:id="@+id/switch_medica"
+        android:layout_width="51dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_alergia"
+        tools:layout_editor_absoluteX="321dp" />
+
+    <Switch
+        android:id="@+id/switch_medica3"
+        android:layout_width="51dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_medicamento"
+        tools:layout_editor_absoluteX="321dp" />
+
+    <TextView
+        android:id="@+id/text_no"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="No"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/switch_medica"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/alg_medicam"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_alergia" />
+
+    <TextView
+        android:id="@+id/text_no3"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="No"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/switch_medica3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/alg_medicam2"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_medicamento" />
+
+    <TextView
+        android:id="@+id/text_si"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="Si"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_medica"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_alergia" />
+
+    <TextView
+        android:id="@+id/text_si4"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Si"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_medica3"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_medicamento" />
+
+    <Switch
+        android:id="@+id/switch_medica2"
+        android:layout_width="51dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/text_no2"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Sintomas"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_si3"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Si"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switch_medica2"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Sintomas" />
+
+    <TextView
+        android:id="@+id/text_no2"
+        android:layout_width="29dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="No"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/alergia"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Sintomas" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="Registrar"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_cirujia"
+        app:layout_constraintVertical_bias="0.851"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
