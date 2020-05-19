@@ -70,4 +70,26 @@
         app:layout_constraintStart_toEndOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/webView" />
 
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="102dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton"
+        app:srcCompat="@drawable/ambulancia" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+        app:srcCompat="@drawable/cuarentena" />
+
 </android.support.constraint.ConstraintLayout>
