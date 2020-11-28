@@ -50,8 +50,8 @@
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="24dp"
         android:gravity="center_vertical"
         android:text="PRIORIDAD ALTA"
@@ -96,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tratamiento Hospital"
-        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteX="60dp"
         tools:layout_editor_absoluteY="605dp" />
 
     <TextView
@@ -104,7 +104,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tratamiento desde Casa"
-        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteX="229dp"
         tools:layout_editor_absoluteY="605dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vector_fondo2"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/txtTitle3"
+        android:layout_width="332dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/boton_fijo"
+        android:gravity="center|center_horizontal"
+        android:text="Sarampion"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTitle4"
+        android:layout_width="332dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton_fijo"
+        android:gravity="center|center_horizontal"
+        android:text="Tosferina"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTitle5"
+        android:layout_width="332dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/boton_fijo"
+        android:gravity="center|center_horizontal"
+        android:text="Sarampion"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTitle6"
+        android:layout_width="332dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/boton_fijo"
+        android:gravity="center|center_horizontal"
+        android:text="Varicela"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="Registrar"
+        android:text="@string/enviar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="333dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="28dp"
+        android:textSize="30sp"
+        android:textColor="#0D1FC9"
+        android:textStyle="bold"
+        android:text="Recuerde aplicar las siguientes inyecciones al niño"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="40dp" />
+
+</android.support.constraint.ConstraintLayout>
