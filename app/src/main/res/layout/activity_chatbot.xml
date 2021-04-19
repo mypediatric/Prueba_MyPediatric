@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        android:text2="Luis Alvarez tel +57 1 3132085514"
+        android:text2="Luis Alvarez tel +57 1 3132085514 email: fealgolu@gmail.com"
         />
 
     <Button
